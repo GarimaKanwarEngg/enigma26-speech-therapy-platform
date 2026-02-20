@@ -1,78 +1,140 @@
-<<<<<<< HEAD
-# Welcome to your Lovable project
+# Speech Therapy Material Platform  
+ENIGMA’26 – Inter College Hackathon  
+Domain: Healthcare  
+Team: TEAM ZERO  
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Overview
 
-## How can I edit this code?
+The Speech Therapy Material Platform is a full-stack web application designed to digitize and structure speech therapy sessions. The system enables therapists to manage patients, assign therapy modules, track performance, and generate reports, while providing children with real-time pronunciation feedback and parents with transparent progress monitoring.
 
-There are several ways of editing your application.
+The platform integrates AI-driven pronunciation analysis to improve therapy effectiveness and ensure measurable outcomes.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Problem Statement
 
-Changes made via Lovable will be committed automatically to this repo.
+Speech therapy management in many institutions remains partially manual and inconsistent. Common challenges include:
 
-**Use your preferred IDE**
+- Lack of structured digital tracking  
+- Limited real-time pronunciation correction  
+- Manual progress monitoring  
+- Inconsistent home practice guidance  
+- Limited parent visibility into therapy progress  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+There is a need for a structured, scalable, and intelligent system that ensures consistency, measurable improvement, and improved collaboration between therapists and parents.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## Proposed Solution
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+This platform provides:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- Structured therapy module management  
+- Real-time speech-to-text integration  
+- AI-based pronunciation feedback  
+- Phoneme-level accuracy analysis  
+- Role-based dashboards  
+- Performance analytics and reporting  
+- Secure authentication and access control  
 
-# Step 3: Install the necessary dependencies.
-npm i
+The system ensures organized therapy delivery, continuous progress tracking, and improved learning outcomes.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## Technology Stack
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
+### Frontend
+- React.js (Vite)
 - Tailwind CSS
+- Framer Motion
+- Recharts
+- Axios
 
-## How can I deploy this project?
+### Backend
+- Node.js
+- Express.js
+- MongoDB with Mongoose
+- JWT Authentication
+- Bcrypt password hashing
+- Role-based access control
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+### AI & Speech Integration
+- Web Speech API (Real-time speech recognition)
+- OpenAI API (Pronunciation feedback and suggestions)
+- Custom phoneme analysis logic
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## User Roles
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Therapist (Admin)
+- Manage patients  
+- Assign therapy modules  
+- Create goals and milestones  
+- Schedule sessions  
+- Add session notes  
+- Track performance metrics  
+- View analytics dashboards  
+- Generate reports  
+- Communicate with parents  
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
-=======
-# enigma26-speech-therapy-platform
-Enigma'26 Hackathon Project – Speech Therapy Material Platform
->>>>>>> 2c1868b237b860c53e6687481c4f81722041a3bd
+### Child/User
+- Access assigned therapy modules  
+- Participate in therapy sessions  
+- Receive real-time pronunciation feedback  
+- View scores and progress  
+- Track performance history  
+
+### Parent
+- Monitor child progress  
+- View performance graphs  
+- Access home practice guidance  
+- Receive therapist updates  
+- Review session summaries  
+
+---
+
+## Core Features
+
+### Authentication & Security
+- Secure signup and login  
+- JWT-based authentication  
+- Role-based dashboard access  
+- Password encryption  
+- Protected API routes  
+- Input validation and sanitization  
+
+### Analytics
+- Accuracy score tracking  
+- Weekly performance graphs  
+- Session completion tracking  
+- AI-generated improvement insights  
+- Downloadable performance reports  
+
+### System Capabilities
+- RESTful API architecture  
+- MVC folder structure  
+- Environment-based configuration  
+- Error handling middleware  
+- Offline support (basic caching)  
+- Responsive UI (mobile and desktop)  
+- Dark mode support  
+
+---
+
+## Database Collections
+
+- Users  
+- Patients  
+- TherapyModules  
+- Sessions  
+- Progress  
+- Reports  
+
+---
+
+## Folder Structure
+
+### Frontend
